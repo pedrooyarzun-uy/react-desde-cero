@@ -5,10 +5,15 @@ import './index.css';
 //import { CounterWithCustomHook } from './useState/CounterWithCustomHook';
 //import { SimpleForm } from './useEffect/SimpleForm';
 //import { FormWithCustomHook } from './useEffect/FormWithCustromHook';
-import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
+//import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
+//import { FocusScreen } from './useRef/FocusScreen';
+//import { Layout } from './useLayoutEffect/Layout';
+import { Memorize } from './memos/Memorize';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <MultipleCustomHooks/>
+    <Memorize/>
   
 );
