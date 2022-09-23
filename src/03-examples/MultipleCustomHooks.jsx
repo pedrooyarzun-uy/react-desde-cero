@@ -1,5 +1,7 @@
 import { useFetch } from "../hooks/useFetch"
 import {useCounter} from "../hooks/useCounter"
+import { Quote } from "./Quote"
+import { LoadingQuote } from "./LoadingQuote"
 
 export const MultipleCustomHooks = () => {
     
@@ -18,16 +20,8 @@ export const MultipleCustomHooks = () => {
 
             {
                 isLoading
-                    ? (
-                        <div className="alert alert-info text-center">
-                            Loading...
-                        </div>
-                    ) : (
-                        <blockquote className="blockquote text-end">
-                            <p className="mb-2">{quote}</p>
-                            <footer className="blockquote-footer">{author}</footer>
-                        </blockquote>
-                    )
+                    ? <LoadingQuote/>
+                    : <Quote author={author} quote={quote}/> 
             }
 
             <button 
