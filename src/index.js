@@ -8,12 +8,12 @@ import './index.css';
 //import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks';
 //import { FocusScreen } from './useRef/FocusScreen';
 //import { Layout } from './useLayoutEffect/Layout';
-import { Memorize } from './memos/Memorize';
-
-
+//import { Memorize } from './memos/Memorize';
+//import { MemoHook } from './memos/MemoHook';
+import { CallbackHook } from './memos/CallbackHook';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <Memorize/>
+    <CallbackHook/>
   
 );
