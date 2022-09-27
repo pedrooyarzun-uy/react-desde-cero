@@ -10,10 +10,13 @@ import './index.css';
 //import { Layout } from './useLayoutEffect/Layout';
 //import { Memorize } from './memos/Memorize';
 //import { MemoHook } from './memos/MemoHook';
-import { CallbackHook } from './memos/CallbackHook';
+//import { CallbackHook } from './memos/CallbackHook';
+//import { Padre } from './tareas/tarea-memo/Padre';
+//import './useReducer/intro-reducer'
+import { TodoApp } from './useReducer/TodoApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <CallbackHook/>
+    <TodoApp/>
   
 );
